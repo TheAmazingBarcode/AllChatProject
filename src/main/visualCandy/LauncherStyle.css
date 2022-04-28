@@ -1,0 +1,11 @@
+.root {
+  -fx-background-image: url("allChatLauncher.jpg")
+}
+
+.button {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-background-color: rgb(154, 150, 158);
+  -fx-text-fill: white;
+  -fx-font-family: "UniSpace";
+}

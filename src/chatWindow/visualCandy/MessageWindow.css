@@ -1,0 +1,92 @@
+.vbox-messages {
+  -fx-background-color: rgb(27, 27, 28);
+  -fx-font-family: "UniSpace";
+}
+
+.button-sendButton {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-background-color: rgb(154, 150, 158);
+  -fx-font-family: "UniSpace";
+  -fx-font-size:35px;
+}
+
+.button-sendButton:hover {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-background-color: rgb(164, 160, 168);
+  -fx-font-family: "UniSpace";
+  -fx-font-size:35px;
+}
+
+.textField-MessageBar {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+
+  -fx-background-color: rgb(77, 75, 79);
+  -fx-text-fill: rgb(173, 172, 173);
+  -fx-font-family: "UniSpace";
+  -fx-font-size: 35px;
+}
+
+.list-view-chatsList {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.list-view-chatsList {
+  -fx-background-color: rgb(77, 75, 79);
+  -fx-font-family: "UniSpace";
+}
+
+.list-view-chatsList .list-cell:hover {
+  -fx-background-color: rgb(62, 61, 64);
+  -fx-text-color: grey;
+}
+
+.list-view-chatsList .list-cell:selected {
+    -fx-background-color: rgb(62, 61, 64);
+    -fx-text-color: grey;
+}
+
+.list-view .list-cell {
+    -fx-background-color: rgb(27, 27, 28);
+    -fx-text-fill: rgb(167, 161, 171);
+    -fx-font-family: "UniSpace";
+}
+
+.label-yourChatsLabel {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.label-username {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.label-messagingUser {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.scroll-pane-MessageContainer {
+  -fx-background-color: rgb(27, 27, 28);
+}
+
+.scroll-pane-MessageContainer > .corner {
+  -fx-background-color: rgb(27, 27, 28);
+}
+
+.scroll-bar:horizontal,.scroll-bar:vertical {
+  -fx-background-color :rgb(27, 27, 28);
+}
+
+.root {
+  -fx-background-color: rgb(27, 27, 28);
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgb(62, 61, 64);
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="706.0" prefWidth="1221.0" stylesheets="@visualCandy/ChatWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatWindow.ChatController">
+   <children>
+      <VBox layoutX="940.0" layoutY="14.0" prefHeight="231.0" prefWidth="267.0" spacing="14.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="265.0" styleClass="label-username" text="    Find People" textAlignment="CENTER">
+               <font>
+                  <Font name="Unispace-Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchedUser" alignment="CENTER" prefHeight="66.0" prefWidth="187.0" promptText="Username" styleClass="textField-searchedUser">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </TextField>
+            <Button fx:id="findButton" mnemonicParsing="false" onAction="#findUser" prefHeight="71.0" prefWidth="267.0" styleClass="button-findButton" text="FIND">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <TableView layoutX="341.0" layoutY="14.0" prefHeight="602.0" prefWidth="553.0" visible="false">
+        <columns>
+          <TableColumn prefWidth="552.0" text="MESSAGES" />
+        </columns>
+      </TableView>
+      <Label fx:id="username" layoutX="23.0" layoutY="630.0" prefHeight="54.0" prefWidth="232.0" styleClass="label-username" text="USERNAME">
+         <font>
+            <Font name="Unispace-Bold" size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutX="23.0" layoutY="14.0" prefHeight="602.0" prefWidth="232.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="233.0" styleClass="label-yourChatsLabel" text=" YOUR CHATS" textAlignment="CENTER">
+               <font>
+                  <Font name="Unispace-Bold" size="32.0" />
+               </font>
+            </Label>
+            <ListView fx:id="chatsList" onMouseClicked="#selectChat" prefHeight="550.0" prefWidth="232.0" styleClass="list-view-chatsList" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

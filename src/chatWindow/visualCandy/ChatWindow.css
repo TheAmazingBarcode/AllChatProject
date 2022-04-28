@@ -1,0 +1,64 @@
+.root {
+  -fx-background-color: rgb(27, 27, 28);
+}
+
+.button-findButton {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-background-color: rgb(154, 150, 158);
+  -fx-font-family: "UniSpace";
+}
+
+.button-findButton:hover {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-background-color: rgb(164, 160, 168);
+  -fx-font-family: "UniSpace";
+  -fx-font-size: 35px;
+}
+
+.textField-searchedUser {
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+
+  -fx-background-color: rgb(77, 75, 79);
+  -fx-text-fill: rgb(173, 172, 173);
+  -fx-font-family: "UniSpace";
+}
+
+.label-yourChatsLabel {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.label-username {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+
+.list-view-chatsList {
+  -fx-text-fill: grey;
+  -fx-font-family: "UniSpace";
+}
+
+.list-view-chatsList {
+  -fx-background-color: rgb(77, 75, 79);
+  -fx-font-family: "UniSpace";
+}
+
+.list-view-chatsList .list-cell:hover {
+  -fx-background-color: rgb(62, 61, 64);
+  -fx-text-color: grey;
+}
+
+.list-view-chatsList .list-cell:selected {
+    -fx-background-color: rgb(62, 61, 64);
+    -fx-text-color: grey;
+}
+
+.list-view .list-cell {
+    -fx-background-color: rgb(27, 27, 28);
+    -fx-text-fill: rgb(167, 161, 171);
+    -fx-font-family: "UniSpace";
+}

@@ -1,0 +1,6 @@
+.label {
+  -fx-background-color: rgb(27, 27, 28);
+  -fx-font-size: 15px;
+  -fx-font-family: "UniSpace";
+  -fx-text-fill: grey;
+}

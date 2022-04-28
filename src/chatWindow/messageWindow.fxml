@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="619.0" prefWidth="1206.0" stylesheets="@visualCandy/MessageWindow.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatWindow.MessageController">
+   <children>
+      <VBox layoutX="14.0" layoutY="23.0" prefHeight="473.0" prefWidth="208.0">
+         <children>
+            <Label fx:id="yourChatsLabel" styleClass="label-yourChatsLabel" text="YOUR CHATS" textFill="#8d8484">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <ListView fx:id="chatList" onMouseClicked="#selectChat" prefHeight="418.0" prefWidth="208.0" styleClass="list-view-chatsList" />
+         </children>
+      </VBox>
+      <TextField fx:id="messageBar" layoutX="236.0" layoutY="510.0" prefHeight="75.0" prefWidth="791.0" promptText="Your message goes here" styleClass="textField-MessageBar">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendButton" layoutX="1042.0" layoutY="510.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="51.0" prefWidth="147.0" styleClass="button-sendButton" text="SEND">
+         <font>
+            <Font name="Unispace-Bold" size="35.0" />
+         </font>
+      </Button>
+      <Label fx:id="username" layoutX="10.0" layoutY="510.0" prefHeight="75.0" prefWidth="216.0" styleClass="label-username" text="       Username" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="messagingUser" layoutX="1030.0" layoutY="14.0" prefHeight="75.0" prefWidth="172.0" styleClass="label-messagingUser" text="   MESSAGING">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="messagesContainer" layoutX="231.0" layoutY="14.0" prefHeight="479.0" prefWidth="791.0" styleClass="scroll-pane-MessageContainer">
+         <content>
+            <VBox fx:id="messages" prefHeight="477.0" prefWidth="793.0" styleClass="vbox-messages" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
